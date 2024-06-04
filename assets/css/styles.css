@@ -43,6 +43,7 @@ body {
 .header.fixed {
     position: sticky;
     top: -28px;
+    z-index: 1;
 }
 
 .header .body {
@@ -88,4 +89,77 @@ body {
 
 .header .action {
     margin-left: 49px;
+}
+
+/* ============== Hero ============== */
+.hero {
+    padding-bottom: 65px;
+    background: #FFFCF4;
+}
+
+.hero .hero-left {
+    width: 48%;
+    position: relative;
+}
+
+.hero .hero-left .img {
+    width: 470px;
+    height: 658px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.hero-left .hero-summary {
+    width: 272px;
+    height: 244px;
+    padding: 28px 24px;
+    border-radius: 12px;
+    background: #fff;
+    position: absolute;
+    right: 0;
+    top: 393px;
+}
+
+.hero-left .item {
+    display: flex;
+}
+
+.hero-left .icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #FFF9E8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-left .item + .item {
+    margin-top: 22px;
+}
+
+.hero-left .item:nth-of-type(2) .icon{
+    background: #FCEFFF;
+}
+
+.hero-left .item:nth-of-type(3) .icon{
+    background: #EBEAFF;
+}
+
+.hero-left .info {
+    padding-left: 16px;
+}
+
+.hero-left .info .label {
+    color: #5F5B53;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85;
+}
+
+.hero-left .info .title {
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.6;
 }
