@@ -31,6 +31,10 @@ body {
     --line-clamp: 1
 }
 
+.line-clamp.line-4 {
+    --line-clamp: 4
+}
+
 .break-all {
     word-break: break-all;
 }
@@ -396,3 +400,81 @@ body {
     cursor: pointer;
     background: var(--primary-color);
 }
+
+
+/* =========== Feedback ============= */
+
+.feedback {
+    padding: 96px 0;
+    margin-top: 135px;
+    background: #2E2100;
+}
+
+.feedback-list {
+    display: flex;
+    overflow: hidden;
+}
+
+.feedback-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-shrink: 0;
+}
+
+.feedback-item .avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.feedback-item .name {
+    margin-top: 18px;
+    color: #F7F7F7;
+    font-family: var(--font-heading);
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.41;
+}
+
+.feedback-item .info .desc {
+    color: #BFBCB2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85;
+}
+
+.feedback-item .dots {
+    margin-top: 28px;
+    display: flex;
+    gap: 6px;
+}
+
+.feedback-item .dots .dot {
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #634700;
+    cursor: pointer;
+}
+
+.feedback-item .dots .dot.active {
+    background: var(--primary-color);
+    cursor: default;
+}
+
+.feedback-item .quote {
+    width: 66%;
+}
+
+.feedback-item blockquote {
+    padding-left: 30px;
+    color: #FFF;
+    font-size: 2.6rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.53;
+}
+
