@@ -67,18 +67,19 @@ body {
 .heading {
     color: #171100;
     font-family: var(--font-heading);
-    line-height: 1;
     letter-spacing: -1.16px;
 }
 
 .heading.lv1 {
     font-size: 5.8rem;
     font-weight: 700;
+    line-height: 1.17;
 }
 
 .heading.lv2 {
     font-weight: 700;
     font-size: 3.8rem;
+    line-height: 1.26;
 }
 
 .desc {
@@ -523,4 +524,22 @@ body {
     margin-top: 32px;
     min-width: 137px;
     background: var(--primary-color);
+}
+
+.features-2 {
+    margin-top: 70px;
+}
+
+.features-2 .main-content {
+    width: 49%;
+}
+
+.features-2 .heading {
+    margin-top: 71px;
+}
+
+.features-2 .images .img {
+    width: 470px;
+    height: 440px;
+    object-fit: cover;
 }
