@@ -46,9 +46,9 @@ body {
 }
 
 .btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: inline-block;
+    padding: 0 16px;
+    line-height: 50px;
     min-width: 118px;
     height: 50px;
     border-radius: 999px;
@@ -57,6 +57,7 @@ body {
     font-size: 1.6rem;
     font-weight: 600;
     text-decoration: none;
+    text-align: center;
 }
 
 .btn:hover {
@@ -238,7 +239,10 @@ body {
     align-items: center;
 }
 
-.hero-right .cta-group .btn {
+.hero-right .cta-group .hero-cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     min-width: 180px;
     height: 64px;
     background: var(--primary-color);
@@ -478,3 +482,45 @@ body {
     line-height: 1.53;
 }
 
+/* ============ Features =============*/
+
+.features {
+    padding: 65px 0;
+    margin-top: 135px;
+}
+
+.features .body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.features .images {
+    display: flex;
+    gap: 0 30px;
+}
+
+.features .images .img {
+    width: 270px;
+    height: 405px;
+    border-radius: 16px;
+}
+
+.features .images .lower {
+    margin-top: 34px;
+}
+
+.features .main-content {
+    width: 40%;
+}
+
+.features .main-content .desc {
+    margin-top: 16px;
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+
+.features .main-content .btn {
+    margin-top: 32px;
+    min-width: 137px;
+    background: var(--primary-color);
+}
